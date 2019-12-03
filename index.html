@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Assignment 2</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css" />
+    <script type="text/javascript" src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="mainGrid">
+      <header>
+        <h2>Calculator</h2>
+      </header>
+
+      <aside>
+        <div class="wrap-height-container">
+          <div class="bar">
+            <div class="bar-item bar-red" onclick="openCity(event,'first')">
+              Responsive Design
+            </div>
+            <div class="bar-item" onclick="openCity(event,'second')">
+              CSS GridLayout
+            </div>
+            <div class="bar-item" onclick="openCity(event,'third')">
+              FlexBox
+            </div>
+          </div>
+
+          <div id="first" class="item">
+            <p>
+              Responsive Web design is the approach that suggests that design
+              and development should respond to the user’s behavior and
+              environment based on screen size, platform and orientation. The
+              practice consists of a mix of flexible grids and layouts, images
+              and an intelligent use of CSS media queries. As the user switches
+              from their laptop to iPad, the website should automatically switch
+              to accommodate for resolution, image size and scripting abilities.
+            </p>
+          </div>
+
+          <div id="second" class="item" style="display:none">
+            <p>
+              CSS Grid Layout is the most powerful layout system available in
+              CSS. It is a 2-dimensional system, meaning it can handle both
+              columns and rows, unlike flexbox which is largely a 1-dimensional
+              system. You work with Grid Layout by applying CSS rules both to a
+              parent element (which becomes the Grid Container) and to that
+              element's children (which become Grid Items).
+            </p>
+          </div>
+
+          <div id="third" class="item" style="display:none">
+            <p>
+              The Flexbox Layout (Flexible Box) module (a W3C Candidate
+              Recommendation as of October 2017) aims at providing a more
+              efficient way to lay out, align and distribute space among items
+              in a container, even when their size is unknown and/or dynamic
+              (thus the word "flex"). The main idea behind the flex layout is to
+              give the container the ability to alter its items' width/height
+              (and order) to best fill the available space (mostly to
+              accommodate to all kind of display devices and screen sizes). A
+              flex container expands items to fill available free space or
+              shrinks them to prevent overflow.
+            </p>
+          </div>
+        </div>
+      </aside>
+
+      <section>
+        <div class="card-container">
+          <div class="calcGrid card">
+            <div class="outputResult">
+              <p id="output">0</p>
+            </div>
+            <div onclick="clickButton(this)" class="digitAC">
+              C
+            </div>
+            <div onclick="clickButton(this)" class="digitPlus digiOpe">
+              +
+            </div>
+            <div onclick="clickButton(this)" class="digitMinus digiOpe">
+              -
+            </div>
+            <div onclick="clickButton(this)" class="digitMultiply digiOpe">
+              *
+            </div>
+            <div onclick="clickButton(this)" class="digitDivide digiOpe">
+              /
+            </div>
+            <div onclick="clickButton(this)" class="digit1">
+              1
+            </div>
+            <div onclick="clickButton(this)" class="digit2">
+              2
+            </div>
+            <div onclick="clickButton(this)" class="digit3">
+              3
+            </div>
+            <div onclick="clickButton(this)" class="digit4">
+              4
+            </div>
+            <div onclick="clickButton(this)" class="digit5">
+              5
+            </div>
+            <div onclick="clickButton(this)" class="digit6">
+              6
+            </div>
+            <div onclick="clickButton(this)" class="digit7">
+              7
+            </div>
+            <div onclick="clickButton(this)" class="digit8">
+              8
+            </div>
+            <div onclick="clickButton(this)" class="digit9">
+              9
+            </div>
+            <div onclick="clickButton(this)" class="digit0">
+              0
+            </div>
+            <div onclick="clickButton(this)" class="digitdot">
+              .
+            </div>
+            <div onclick="clickButton(this)" class="digitEQ">
+              =
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>Made with ❤️ by Aditya</footer>
+    </div>
+  </body>
+</html>
